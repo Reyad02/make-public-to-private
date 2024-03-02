@@ -1,17 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- tailwindcss and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- common css  -->
+    <link rel="stylesheet" href="common_style.css">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d5a588b7f0.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
-    <h1 class="text-3xl">Hi</h1>
+<body class="px-2">
+
+    <header class="max-w-7xl mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <a class="btn btn-ghost text-xl"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="flex-none">
+                    <ul class="menu menu-horizontal px-1 ">
+
+                        <div class="gap-3 hidden lg:flex">
+                            <li title="Home"><a class="btn"><i class="fa-solid fa-house"></i></a></li>
+                            <li title="Tooltip"><a class="btn"><i class="fa-solid fa-pencil"></i></a></li>
+                            <li title="Add"><a class="btn"><i class="fa-solid fa-user-plus"></i></a></li>
+                            <li title=""><a class="btn"><i class="fa-regular fa-flag"></i></a></li>
+                        </div>
+                            
+                       
+                        <div>
+                            <li><a class="btn ml-4 blue_clr text-white font-bold text-xl rounded-full">Sign In</a></li>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner  -->
+        <div class="hero bg-[#12132D] rounded-3xl " style="background-image: url(images/bgbanner.png);">
+            <div class="hero-content flex-col lg:flex-row lg:gap-20 bg-cover lg:px-16  bg-center lg:py-20">
+                <div class="text-center lg:text-left flex-1 text-white ">
+                    <h1 class="text-5xl   font-black">Welcome to the <span class="text-[#797DFCFF]">ReTro</span> Forum
+                    </h1>
+                    <p class="py-6">Share your favorite opinion and win and wp forum coffee mug!</p>
+                    <label class="input input-bordered flex items-center py-7">
+                        <input type="text" class="grow" placeholder="Search here anything" />
+                        <span class="btn blue_clr text-white font-bold text-xl">Search</span>
+                    </label>
+
+                </div>
+                <div class="card shrink-0 w-full  shadow-2xl bg-base-100 gap-4 py-8 px-2 flex-1 text-xl text-[#12132DCC] font-semibold">
+                    <div class="flex justify-between ">
+                        <p class="">Registered Users</p>
+                        <p>01</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p >Forum</p>
+                        <p>01</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p>Topics</p>
+                        <p>01</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p>Replies</p>
+                        <p>01</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+
+        </section>
+    </main>
 
     <script src="js/app.js"></script>
 </body>
